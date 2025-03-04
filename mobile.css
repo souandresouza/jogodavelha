@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  font-family: "Press Start 2P", cursive;
+  user-select: none;
+}
+
+body {
+  background: #285CA1;
+  margin: 0;
+  padding: 0;
+}
+
+.ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tabel {
+  width: 95vw; /* Increased width for better fit */
+  height: 95vw; /* Maintain aspect ratio */
+  background: #76AFD6;
+  border-radius: 50%;
+  border: 1px solid #0D152B;
+  box-shadow: -2px 10px 0 -3px #4283C4, -10px 10px #0D152B;
+  flex-direction: column;
+}
+
+.board {
+  width: 85vw; /* Increased width for better fit */
+  height: 85vw; /* Maintain aspect ratio */
+  background: #D3E2EA;
+  border-radius: 20px;
+  border: 1px solid #0D152B;
+  box-shadow: -5px 2.5px 0px -1px #192852;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+}
+
+.board > span {
+  background: #76AFD6;
+  color: #fff;
+  font-size: 2.5em; /* Adjusted font size for better fit */
+  padding-left: 5px;
+  padding-top: 3px;
+  text-align: center;
+  border: 2px solid #0D152B;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: -1px 1.5px 0px 0px #141D4C;
+}
+
+.board > span:hover {
+  background: #6aa8d2;
+}
+
+.board > span:active {
+  box-shadow: -1px 5px 0px -1.5px #141D4C;
+}
+
+#reset {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 0.9em; /* Slightly reduced font size */
+}
+
+.win {
+  background: #55efc4 !important;
+}
